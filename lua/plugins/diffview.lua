@@ -33,6 +33,9 @@ return {
 			{ "<leader>gdo", "<cmd>DiffviewOpen<cr>", desc = "Diffview Open" },
 			{ "<leader>gdc", "<cmd>DiffviewClose<cr>", desc = "Diffview Close" },
 			{ "<leader>gdh", "<cmd>DiffviewFileHistory %<cr>", desc = "Current File History" },
+			-- NEW: Master comparison keymaps added below
+			{ "<leader>gdm", "<cmd>DiffviewOpen master...HEAD --imply-local<cr>", desc = "Diff Repo Against master" },
+			{ "<leader>gdf", "<cmd>DiffviewOpen master -- %<cr>", desc = "Diff Current File Against master" },
 		},
 	},
 }

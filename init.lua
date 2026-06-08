@@ -57,4 +57,6 @@ require("lazy").setup({
 	require("plugins.dashboard"),
 	require("plugins.indent-blankline"),
 	require("plugins.smear_cursor"),
+	require("plugins.git-blame"),
+	require("plugins.gh"),
 })
