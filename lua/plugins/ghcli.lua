@@ -18,7 +18,27 @@ return
           -- your gh_pr picker configuration comes here
           -- or leave it empty to use the default settings
         }
-      }
+      },
+      win = {
+        -- <a-w> (cycle_win) is captured by WezTerm before it reaches Neovim.
+        -- <c-w>w doesn't work in the input box: <c-w> alone is already bound
+        -- there (insert mode) to delete-word, so it fires before "w" arrives.
+        input = {
+          keys = {
+            ["<c-l>"] = { "cycle_win", mode = { "i", "n" } },
+          },
+        },
+        list = {
+          keys = {
+            ["<c-l>"] = "cycle_win",
+          },
+        },
+        preview = {
+          keys = {
+            ["<c-l>"] = "cycle_win",
+          },
+        },
+      },
     },
   },
   keys = {
