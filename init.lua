@@ -58,4 +58,5 @@ require("lazy").setup({
 	require("plugins.smear_cursor"),
 	require("plugins.git-blame"),
 	require("plugins.gh"),
+	require("plugins.ghcli"),
 })
